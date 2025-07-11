@@ -18,7 +18,7 @@ const TrailerSection = () => {
         <BlurCircle top='-100px' right='-100px' />
         <ReactPlayer src={currentTrailer?.videoUrl} controls={false} autoPlay={true} className='mx-auto max-w-full' width='960px' height='540px' />
       </div>
-      <div className='grid group grid-cols-4 gap-4 md:gap-8 mt-8 max-w-3xl mx-auto'>
+      <div className='grid group grid-cols-4  gap-4 md:gap-8 mt-8 max-w-3xl mx-auto'>
         {dummyTrailers.map((trailer)=>(
           <div className='relative group-hover:not-hover:opacity-50 hover:-translate-y-1 duration-300 transition max-md:h-60 cursor-pointer' key={trailer.image} onClick={()=>setCurrentTrailer(trailer)}>
             <img src={trailer.image} alt="trailer" className='rounded-lg w-full h-full object-cover brightness-75'/>
